@@ -7,7 +7,17 @@
 //
 
 #import "ContactLister.h"
-
+#import "Contact.h"
 @implementation ContactLister
 
+-(instancetype) init {
+    if (self = [super init]) {
+        _ContactArray = [[NSMutableArray alloc] init];
+        
+    }
+    return self;
+}
+-(void)addContact:(Contact *)newContact {
+    [_ContactArray addObject:newContact];
+}
 @end
