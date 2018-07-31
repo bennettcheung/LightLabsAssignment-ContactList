@@ -36,7 +36,7 @@ int main(int argc, const char * argv[]) {
         
         while (true) {
             
-        NSString *userInput = [inputSelection inputForPrompt:@"What would you like to do next? new - Create a new contact list - List all contacts quit = Exit Application"];
+            NSString *userInput = [inputSelection inputForPrompt:@"What would you like to do next? new - Create a new contact list - List all contacts show # - show specific contact by list reference quit = Exit Application"];
             
             //Check for quit input
             if ([userInput isEqualToString:@"quit"])
@@ -55,6 +55,16 @@ int main(int argc, const char * argv[]) {
             else if ([userInput isEqualToString:@"list"])
             {
                 [myContacts printContacts];
+            }
+            else if ([userInput hasPrefix:@"show"])
+            {
+                NSArray *inputUtility = [userInput componentsSeparatedByString:@" "];
+                if ([inputUtility count] == 2)
+                {
+                NSString *indexString = [inputUtility objectAtIndex:1];
+                int indexnumber = [indexString intValue];
+                    [myContacts printContactat:indexnumber];
+                }
             }
             }
     }

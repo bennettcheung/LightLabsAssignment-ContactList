@@ -53,9 +53,9 @@
 				A142F4CA211106BC004E63AF /* Contact.h */,
 				A142F4CB211106BC004E63AF /* Contact.m */,
 				A142F4CD211106CF004E63AF /* ContactLister.h */,
+				A142F4CE211106CF004E63AF /* ContactLister.m */,
 				A142F4D021110708004E63AF /* InputCollector.h */,
 				A142F4D121110708004E63AF /* InputCollector.m */,
-				A142F4CE211106CF004E63AF /* ContactLister.m */,
 				A142F4C221110695004E63AF /* ContactsList */,
 				A142F4C121110695004E63AF /* Products */,
 			);

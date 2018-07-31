@@ -28,4 +28,15 @@
         NSLog(@"%i; %@ ()", i, temporaryContact.name);
     }
 }
+-(void)printContactat:(int)indexNumber
+{
+    if (indexNumber >= 0 && indexNumber <= [_ContactArray count])
+    {
+    Contact *temporaryContact = [_ContactArray objectAtIndex:indexNumber];
+    NSLog(@"%@ , %@", temporaryContact.name, temporaryContact.email);
+}
+    else {
+        NSLog(@"Object could not be found");
+    }
+}
 @end
