@@ -20,4 +20,12 @@
 -(void)addContact:(Contact *)newContact {
     [_ContactArray addObject:newContact];
 }
+-(void)printContacts
+{
+    for (int i = 0; i < [_ContactArray count]; i++)
+    {
+        Contact *temporaryContact = [_ContactArray objectAtIndex:i];
+        NSLog(@"%i; %@ ()", i, temporaryContact.name);
+    }
+}
 @end

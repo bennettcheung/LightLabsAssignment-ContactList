@@ -12,4 +12,5 @@
 
 @property NSMutableArray *ContactArray;
 -(void)addContact:(Contact*)newContact;
+-(void)printContacts;
 @end

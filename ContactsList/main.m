@@ -52,6 +52,10 @@ int main(int argc, const char * argv[]) {
                 [myContacts addContact:samplePerson];
                 NSLog(@"%@ added to contacts", samplePerson.name);
             }
+            else if ([userInput isEqualToString:@"list"])
+            {
+                [myContacts printContacts];
+            }
             }
     }
     return 0;
