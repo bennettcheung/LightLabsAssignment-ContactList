@@ -66,6 +66,16 @@ int main(int argc, const char * argv[]) {
                     [myContacts printContactat:indexnumber];
                 }
             }
+            else if ([userInput hasPrefix:@"find"])
+            {
+                NSArray *inputUtility = [userInput componentsSeparatedByString:@" "];
+                if ([inputUtility count] == 2)
+                {
+                    NSString *seachString = [inputUtility objectAtIndex:1];
+                    [myContacts findContactByString:seachString];
+            }
+                
+            }
             }
     }
     return 0;

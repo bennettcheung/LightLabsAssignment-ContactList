@@ -14,4 +14,5 @@
 -(void)addContact:(Contact*)newContact;
 -(void)printContacts;
 -(void)printContactat:(int)indexNumber;
+-(void)findContactByString:(NSString*)searchTerm;
 @end

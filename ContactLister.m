@@ -39,4 +39,19 @@
         NSLog(@"Object could not be found");
     }
 }
+-(void)findContactByString:(NSString*)searchTerm
+{
+    bool found = NO;
+        for (Contact *searchContact in _ContactArray) {
+        if ([searchContact.name containsString:searchTerm] || [searchContact.email containsString:searchTerm])
+        {
+            NSLog(@"Found - %@ %@", searchContact.name, searchContact.email);
+        found = YES;
+            break;
+        }
+    } if (found == NO)
+    {
+        NSLog(@"Object not found");
+    }
+}
 @end
