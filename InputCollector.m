@@ -7,7 +7,7 @@
 //
 
 #import "InputCollector.h"
-
+#import "PhoneNumber.h"
 @implementation InputCollector
 -(instancetype) init {
     if (self = [super init]) {

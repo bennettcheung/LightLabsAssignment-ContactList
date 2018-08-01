@@ -27,6 +27,10 @@ int main(int argc, const char * argv[]) {
         Contact *Emma =[[Contact alloc] init];
         [Emma setName:@"Emma"];
         [Emma setEmail:@"Emma@gmail.com"];
+        PhoneNumber *emmasNumber = [[PhoneNumber alloc] init];
+        emmasNumber.numberType = @"mobile";
+        emmasNumber.number = @"293-8492";
+        [Emma addPhoneNumbers:emmasNumber];
         
         
         ContactLister *myContacts = [[ContactLister alloc] init];
@@ -49,7 +53,24 @@ int main(int argc, const char * argv[]) {
                 Contact *samplePerson = [[Contact alloc] init];
                 samplePerson.name = [inputSelection inputForPrompt:@"Name: "];
                 samplePerson.email = [inputSelection inputForPrompt:@"Email: "];
+               
+                while (true)
+                {
+                    NSString *phoneInfo = [inputSelection inputForPrompt:@"Input Phone Number and type separated by a space, or enter done to exit:"];
+                        if ([phoneInfo isEqualToString:@"done"]) {
+                            break;
+                        }
+                    NSArray *inputUtility = [phoneInfo componentsSeparatedByString:@" "];
+                    PhoneNumber *newNumber = [[PhoneNumber alloc] init];
+                    if ([inputUtility count] == 2)
+                    {
+                        newNumber.number = inputUtility[0];
+                        newNumber.numberType = inputUtility[1];
+                        [samplePerson addPhoneNumbers:newNumber];
+                    }
+                }
                 [myContacts addContact:samplePerson];
+                
             }
             else if ([userInput isEqualToString:@"list"])
             {

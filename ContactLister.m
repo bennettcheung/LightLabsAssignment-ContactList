@@ -8,6 +8,7 @@
 
 #import "ContactLister.h"
 #import "Contact.h"
+#import "PhoneNumber.h"
 @implementation ContactLister
 
 -(instancetype) init {
@@ -37,8 +38,12 @@
 {
     for (int i = 0; i < [_ContactArray count]; i++)
     {
-        Contact *temporaryContact = [_ContactArray objectAtIndex:i];
+        Contact *temporaryContact = [self.ContactArray objectAtIndex:i];
         NSLog(@"%i; %@ ()", i, temporaryContact.name);
+        for (int j = 0; j < [temporaryContact.phoneNumbers count]; j++)
+        {
+            NSLog(@"%@",temporaryContact.phoneNumbers[j]);
+        }
     }
 }
 -(void)printContactat:(int)indexNumber

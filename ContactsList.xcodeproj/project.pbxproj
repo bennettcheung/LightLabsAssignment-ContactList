@@ -11,6 +11,7 @@
 		A142F4CC211106BC004E63AF /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = A142F4CB211106BC004E63AF /* Contact.m */; };
 		A142F4CF211106CF004E63AF /* ContactLister.m in Sources */ = {isa = PBXBuildFile; fileRef = A142F4CE211106CF004E63AF /* ContactLister.m */; };
 		A142F4D221110708004E63AF /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = A142F4D121110708004E63AF /* InputCollector.m */; };
+		A142F4D521113C4A004E63AF /* PhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = A142F4D421113C4A004E63AF /* PhoneNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		A142F4CE211106CF004E63AF /* ContactLister.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactLister.m; sourceTree = "<group>"; };
 		A142F4D021110708004E63AF /* InputCollector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputCollector.h; sourceTree = "<group>"; };
 		A142F4D121110708004E63AF /* InputCollector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputCollector.m; sourceTree = "<group>"; };
+		A142F4D321113C4A004E63AF /* PhoneNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneNumber.h; sourceTree = "<group>"; };
+		A142F4D421113C4A004E63AF /* PhoneNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				A142F4CA211106BC004E63AF /* Contact.h */,
+				A142F4D321113C4A004E63AF /* PhoneNumber.h */,
+				A142F4D421113C4A004E63AF /* PhoneNumber.m */,
 				A142F4CB211106BC004E63AF /* Contact.m */,
 				A142F4CD211106CF004E63AF /* ContactLister.h */,
 				A142F4CE211106CF004E63AF /* ContactLister.m */,
@@ -137,6 +142,7 @@
 				A142F4CF211106CF004E63AF /* ContactLister.m in Sources */,
 				A142F4D221110708004E63AF /* InputCollector.m in Sources */,
 				A142F4C421110695004E63AF /* main.m in Sources */,
+				A142F4D521113C4A004E63AF /* PhoneNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

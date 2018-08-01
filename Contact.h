@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "PhoneNumber.h"
 @interface Contact : NSObject
 @property NSString *name;
 @property NSString *email;
-@property NSString *phoneNumber;
+@property NSMutableArray *phoneNumbers;
+-(void)addPhoneNumbers:(PhoneNumber *)number;
+
 @end
