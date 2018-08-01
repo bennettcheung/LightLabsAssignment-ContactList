@@ -11,4 +11,5 @@
 @interface Contact : NSObject
 @property NSString *name;
 @property NSString *email;
+@property NSString *phoneNumber;
 @end

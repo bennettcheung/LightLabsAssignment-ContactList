@@ -10,5 +10,6 @@
 
 @interface InputCollector : NSObject
 -(NSString *)inputForPrompt:(NSString *)promptString;
-
+@property NSMutableArray *inputHistory;
+-(void)getRecentHistory;
 @end

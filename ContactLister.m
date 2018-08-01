@@ -18,7 +18,20 @@
     return self;
 }
 -(void)addContact:(Contact *)newContact {
-    [_ContactArray addObject:newContact];
+    bool duplicate = NO;
+    for (Contact *searchContact in _ContactArray) {
+        if ([searchContact.email containsString:newContact.email])
+        {
+            
+            duplicate = YES;
+            break;
+        }
+    }
+    if (duplicate == NO)
+    {
+        [_ContactArray addObject:newContact];
+    }
+    else NSLog (@"Contact has already been added");
 }
 -(void)printContacts
 {

@@ -50,7 +50,6 @@ int main(int argc, const char * argv[]) {
                 samplePerson.name = [inputSelection inputForPrompt:@"Name: "];
                 samplePerson.email = [inputSelection inputForPrompt:@"Email: "];
                 [myContacts addContact:samplePerson];
-                NSLog(@"%@ added to contacts", samplePerson.name);
             }
             else if ([userInput isEqualToString:@"list"])
             {
@@ -76,9 +75,13 @@ int main(int argc, const char * argv[]) {
             }
                 
             }
-            }
+            else if ([userInput isEqualToString: @"history"])
+                {
+                    [inputSelection getRecentHistory];
+                }
+        
     }
     return 0;
 }
-
+}
 
